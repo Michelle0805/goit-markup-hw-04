@@ -508,10 +508,10 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 }
 
 .customer-list-item {
-  display: inline-flex;
+  /* display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   border: 1px solid var(--light-slate);
   border-radius: 4px;
   padding: 16px 32px;
@@ -522,16 +522,20 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
  .customer-link-svg{
   width: 104px;
   height: 56px;
-  fill: var(--light-slate);
+  fill: currentColor;
   
  }
+ .customer-link {
+  color: var(--light-slate);
+ }
+
 
  .customer-list-item:hover {
   border-color: var(--ocean);
  }
 
- .customer-list-item:hover .customer-link-svg {
-  fill: var(--ocean);
+ .customer-list-item:hover .customer-link{
+  color: var(--ocean);
  }
 
 
